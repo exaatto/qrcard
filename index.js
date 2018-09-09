@@ -79,7 +79,7 @@ var gen = function (flag) {
   vcard += 'NOTE:访问 exaatto.github.io/qrcard 生成电子名片！\n'
   vcard += 'END:VCARD'
   console.log(vcard)
-  var query = 'http://exaatto.info/card/' + encodeURIComponent(encodeURIComponent(vcard));
+  var query = 'https://exaatto.info/card/' + encodeURIComponent(encodeURIComponent(vcard));
   $.get(query,
     function(data){
       console.log(data)
